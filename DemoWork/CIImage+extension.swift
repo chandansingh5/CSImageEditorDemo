@@ -10,15 +10,15 @@ import CoreImage
 import UIKit
 
 private let ciContext: CIContext = {
-    let eaglContext = EAGLContext(API: EAGLRenderingAPI.OpenGLES2)
-    return CIContext(EAGLContext: eaglContext)
+    let eaglContext = EAGLContext(api: EAGLRenderingAPI.openGLES2)
+    return CIContext(eaglContext: eaglContext!)
 }()
 
 extension CIImage {
     
-    func aapl_jpegRepresentationWithCompressionQuality(compressionQuality: CGFloat) -> NSData? {
-        let outputImageRef = ciContext.createCGImage(self, fromRect: self.extent)
-        let uiImage = UIImage(CGImage: outputImageRef, scale: 1.0, orientation: .Up)
+    func aapl_jpegRepresentationWithCompressionQuality(_ compressionQuality: CGFloat) -> Data? {
+        let outputImageRef = ciContext.createCGImage(self, from: self.extent)
+        let uiImage = UIImage(cgImage: outputImageRef!, scale: 1.0, orientation: .up)
         let jpegRepresentation = UIImageJPEGRepresentation(uiImage, compressionQuality)
         return jpegRepresentation
     }

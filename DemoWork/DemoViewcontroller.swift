@@ -15,7 +15,7 @@ class DemoViewcontroller: UIViewController {
         super.viewDidLoad()
         let fetchOptions = PHFetchOptions()
         fetchOptions.predicate = NSPredicate(format: "title = %@", "App Folder1")
-        _ = PHAssetCollection.fetchAssetCollectionsWithType(.Album, subtype: .Any, options: fetchOptions)
+        _ = PHAssetCollection.fetchAssetCollections(with: .album, subtype: .any, options: fetchOptions)
     }
     
     override func didReceiveMemoryWarning() {
