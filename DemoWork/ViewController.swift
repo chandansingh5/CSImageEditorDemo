@@ -20,7 +20,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     var photosAsset: PHFetchResult<PHAsset>!
     var assetThumbnailSize:CGSize!
     
-    let reuseIdentifier = "PhotoCell"
+    let reuseIdentifier = "PhotoCell"         //Cell 
     let albumName = "App Folder1"            //App specific folder name
     
     
