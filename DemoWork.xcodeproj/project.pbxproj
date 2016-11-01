@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		466BCB821D9F162D00DDC88D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BCB811D9F162D00DDC88D /* AppDelegate.swift */; };
 		466BCB841D9F162D00DDC88D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BCB831D9F162D00DDC88D /* ViewController.swift */; };
-		466BCB871D9F162D00DDC88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466BCB851D9F162D00DDC88D /* Main.storyboard */; };
 		466BCB891D9F162D00DDC88D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466BCB881D9F162D00DDC88D /* Assets.xcassets */; };
 		466BCB8C1D9F162D00DDC88D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466BCB8A1D9F162D00DDC88D /* LaunchScreen.storyboard */; };
 		466BCB971D9F162D00DDC88D /* DemoWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BCB961D9F162D00DDC88D /* DemoWorkTests.swift */; };
 		466BCBA21D9F162D00DDC88D /* DemoWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BCBA11D9F162D00DDC88D /* DemoWorkUITests.swift */; };
+		466BCBB01D9F164E00DDC88D /* ViewPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BCBAF1D9F164E00DDC88D /* ViewPhoto.swift */; };
+		466BCBB21D9F165300DDC88D /* PhotoThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BCBB11D9F165300DDC88D /* PhotoThumbnail.swift */; };
+		466BCBB41D9F166000DDC88D /* CIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BCBB31D9F166000DDC88D /* CIImage+extension.swift */; };
+		466BCBB61D9F167C00DDC88D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466BCBB51D9F167C00DDC88D /* Main.storyboard */; };
+		466BCBBA1D9F21DC00DDC88D /* DemoViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466BCBB91D9F21DC00DDC88D /* DemoViewcontroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,6 @@
 		466BCB7E1D9F162D00DDC88D /* DemoWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		466BCB811D9F162D00DDC88D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		466BCB831D9F162D00DDC88D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		466BCB861D9F162D00DDC88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		466BCB881D9F162D00DDC88D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		466BCB8B1D9F162D00DDC88D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		466BCB8D1D9F162D00DDC88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		466BCB9D1D9F162D00DDC88D /* DemoWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		466BCBA11D9F162D00DDC88D /* DemoWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoWorkUITests.swift; sourceTree = "<group>"; };
 		466BCBA31D9F162D00DDC88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		466BCBAF1D9F164E00DDC88D /* ViewPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPhoto.swift; sourceTree = "<group>"; };
+		466BCBB11D9F165300DDC88D /* PhotoThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoThumbnail.swift; sourceTree = "<group>"; };
+		466BCBB31D9F166000DDC88D /* CIImage+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CIImage+extension.swift"; sourceTree = "<group>"; };
+		466BCBB51D9F167C00DDC88D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		466BCBB91D9F21DC00DDC88D /* DemoViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewcontroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				466BCB811D9F162D00DDC88D /* AppDelegate.swift */,
-				466BCB831D9F162D00DDC88D /* ViewController.swift */,
-				466BCB851D9F162D00DDC88D /* Main.storyboard */,
+				466BCBB91D9F21DC00DDC88D /* DemoViewcontroller.swift */,
+				466BCBB51D9F167C00DDC88D /* Main.storyboard */,
+				466BCBC11D9F2C3700DDC88D /* PhotoUI */,
 				466BCB881D9F162D00DDC88D /* Assets.xcassets */,
 				466BCB8A1D9F162D00DDC88D /* LaunchScreen.storyboard */,
 				466BCB8D1D9F162D00DDC88D /* Info.plist */,
@@ -123,6 +132,17 @@
 				466BCBA31D9F162D00DDC88D /* Info.plist */,
 			);
 			path = DemoWorkUITests;
+			sourceTree = "<group>";
+		};
+		466BCBC11D9F2C3700DDC88D /* PhotoUI */ = {
+			isa = PBXGroup;
+			children = (
+				466BCB831D9F162D00DDC88D /* ViewController.swift */,
+				466BCBAF1D9F164E00DDC88D /* ViewPhoto.swift */,
+				466BCBB11D9F165300DDC88D /* PhotoThumbnail.swift */,
+				466BCBB31D9F166000DDC88D /* CIImage+extension.swift */,
+			);
+			name = PhotoUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +249,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466BCBB61D9F167C00DDC88D /* Main.storyboard in Resources */,
 				466BCB8C1D9F162D00DDC88D /* LaunchScreen.storyboard in Resources */,
 				466BCB891D9F162D00DDC88D /* Assets.xcassets in Resources */,
-				466BCB871D9F162D00DDC88D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				466BCB841D9F162D00DDC88D /* ViewController.swift in Sources */,
+				466BCBB21D9F165300DDC88D /* PhotoThumbnail.swift in Sources */,
+				466BCBB01D9F164E00DDC88D /* ViewPhoto.swift in Sources */,
+				466BCBB41D9F166000DDC88D /* CIImage+extension.swift in Sources */,
 				466BCB821D9F162D00DDC88D /* AppDelegate.swift in Sources */,
+				466BCBBA1D9F21DC00DDC88D /* DemoViewcontroller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +317,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		466BCB851D9F162D00DDC88D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				466BCB861D9F162D00DDC88D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		466BCB8A1D9F162D00DDC88D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -401,10 +417,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: A-1 Technology Inc";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: A-1 Technology Inc";
 				INFOPLIST_FILE = DemoWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chandan.DemoWork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.DemoWrok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "80cde91c-f5f4-4ec4-bfd8-450c321bd425";
 			};
 			name = Debug;
 		};
@@ -412,10 +431,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: A-1 Technology Inc";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: A-1 Technology Inc";
 				INFOPLIST_FILE = DemoWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chandan.DemoWork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a1distribute.DemoWrok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "80cde91c-f5f4-4ec4-bfd8-450c321bd425";
 			};
 			name = Release;
 		};
@@ -484,6 +506,7 @@
 				466BCBA81D9F162D00DDC88D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		466BCBA91D9F162D00DDC88D /* Build configuration list for PBXNativeTarget "DemoWorkTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +515,7 @@
 				466BCBAB1D9F162D00DDC88D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		466BCBAC1D9F162D00DDC88D /* Build configuration list for PBXNativeTarget "DemoWorkUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +524,7 @@
 				466BCBAE1D9F162D00DDC88D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
