@@ -1,8 +1,9 @@
-# PhotosFrameWork-Demo
-This is a library to select single photo in iOS 10 and customize using iOS Photos framework.
-Selected photo from album and show in Custome Albu
-Add Photo in Albumeadfafaalbum
-Edit and delete selecte Customize photo. 
+# CSImageEditor
+It is basic Demo of Photos and photosUI framework. I take a referencefor Apple iOS sample demo App. It is in  pure swift 3.
 
-Features:
-Share customize image 
+
+# Features:-
+- [x] Selected photo from Gallary to Custom Album
+- [x] Capture Photo and add to Custom Album 
+- [x] Edit ,delete and save selecte Customize photo. 
+- [x] Share customize image. 
